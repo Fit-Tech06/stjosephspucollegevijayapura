@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us | St. Joseph's PU College</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet" />
+</head>
+
+<body class="bg-white text-gray-800">
+    <!-- Navbar -->
+    <header class="bg-blue-900 text-white shadow sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 class="flex items-center gap-2 text-3xl md:text-4xl font-extrabold tracking-tight bg-gradient-to-r from-yellow-300 via-white to-yellow-300 text-transparent bg-clip-text drop-shadow-md">
+                <img src="https://img.icons8.com/ios-filled/30/school.png" alt="school" class="w-8 h-8" />
+                St. Joseph's PU College
+              </h1>     
+            <nav class="space-x-4 hidden md:block">
+                <a href="index.html" class="hover:text-yellow-300">Home</a>
+                <a href="about.html" class="hover:text-yellow-300">About</a>
+                <a href="courses.html" class="hover:text-yellow-300">Courses</a>
+                <a href="campus.html" class="hover:text-yellow-300">Campus Life</a>
+                <a href="admissions.html" class="hover:text-yellow-300">Admissions</a>
+                <a href="contact.html" class="hover:text-yellow-300">Contact</a>
+                <a href="founder.html" class="hover:text-yellow-300">Founder</a> <!-- 🔗 New link -->
+              </nav>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="py-16 px-6 max-w-5xl mx-auto" data-aos="fade-up">
+        <h2 class="text-4xl font-bold text-blue-900 mb-6">About St. Joseph’s PU College</h2>
+        <p class="text-lg leading-relaxed mb-6">
+            Founded in 2017, St. Joseph’s PU College, Vijayapura, has rapidly become one of the most trusted names in
+            pre-university education. Built on a foundation of excellence, our college is known for providing students
+            with the right academic environment and holistic growth opportunities.
+        </p>
+        <p class="text-lg leading-relaxed mb-6">
+            We offer an <strong>Integrated Coaching System</strong> that includes NEET, JEE, and CET for Science
+            students, and CPT coaching for Commerce aspirants — all under one roof, guided by experienced and passionate
+            faculty.
+        </p>
+        <p class="text-lg leading-relaxed mb-6">
+            Our classrooms are spacious and equipped with the latest <strong>audio-visual technology</strong> to enhance
+            learning. With dedicated science laboratories, a fully digital library, and infrastructure that supports
+            co-curricular development through <strong>NCC, sports, and cultural activities</strong>, students get the
+            best of both academic and personal development.
+        </p>
+        <p class="text-lg leading-relaxed">
+            We take pride in our students’ consistent performance in Board Exams and Entrance Tests like NEET, JEE, CET,
+            and CPT, year after year.
+        </p>
+    </section>
+
+    <!-- Principal Message Section -->
+    <section class="py-16 px-6 max-w-5xl mx-auto text-center" data-aos="fade-up">
+        <h3 class="text-3xl font-bold mb-4 text-blue-900">Message from the Principal</h3>
+        <div class="md:flex items-center gap-8 mt-6">
+            <img src="https://i.ibb.co/RpfJDMt8/shajusir.jpg" alt="Principal Shaju Sir"
+     class="w-52 h-52 object-cover rounded-full shadow-2xl border-4 border-white transform hover:scale-105 transition duration-500 ease-in-out cursor-pointer"
+     onclick="document.getElementById('principalModal').classList.remove('hidden')" />
+
+
+            <p class="text-lg text-left mt-4 md:mt-0">
+                "At St. Joseph’s PU College, our mission is to cultivate not only academic excellence but also character
+                and discipline. We aim to prepare students for the competitive world while nurturing values and
+                confidence." <br />
+                <span class="font-semibold text-blue-800 block mt-4">– Shaju Joseph, Principal</span>
+            </p>
+        </div>
+    </section>
+
+    <!-- Zoom Modal -->
+<div id="principalModal" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center hidden z-50">
+    <div class="relative">
+      <button onclick="document.getElementById('principalModal').classList.add('hidden')" 
+              class="absolute top-2 right-2 text-white text-2xl font-bold hover:text-red-500">&times;</button>
+      <img src="https://i.ibb.co/RpfJDMt8/shajusir.jpg" 
+           alt="Principal Shaju Sir Zoomed"
+           class="max-w-full max-h-[90vh] border-4 border-white rounded-xl shadow-2xl" />
+    </div>
+  </div>
+<!-- Vice Principal Message Section -->
+<section class="py-16 px-6 max-w-5xl mx-auto text-center" data-aos="fade-up">
+    <h3 class="text-3xl font-bold mb-4 text-blue-900">Message from the Vice Principal</h3>
+    <div class="md:flex items-center gap-8 mt-6">
+      <img src="https://i.ibb.co/pvQz9NBM/jayateerthsir.jpg" alt="Vice Principal"
+        class="w-52 h-52 object-cover rounded-full shadow-2xl border-4 border-white transform hover:scale-105 transition duration-500 ease-in-out" />
+  
+      <p class="text-lg text-left mt-4 md:mt-0">
+        "With a quiet commitment and a calm presence, we strive to create an atmosphere where discipline is balanced with compassion. Our goal is to guide every student gently but firmly toward excellence, both in learning and in character." <br />
+        <span class="font-semibold text-blue-800 block mt-4">– Jayateerth Pandhari, Vice Principal</span>
+      </p>
+    </div>
+  </section>  
+
+    <!-- Footer-->
+    <footer class="relative bg-gray-800 text-gray-200 py-6 text-center overflow-hidden">
+        <!-- Background radial glow -->
+        <div
+            class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-purple-500/20 via-transparent to-transparent blur-2xl">
+        </div>
+
+        <!-- Glowing top border -->
+        <div
+            class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 shadow-lg">
+        </div>
+
+        <!-- Content -->
+        <div class="relative z-10">
+            <p class="mb-2 font-semibold">St. Joseph’s PU College, Vijayapura</p>
+            <p>Behind Ashok Leyland Showroom, NH 13, Sholapur Bangalore Bypass Road, Near Rambhapur Village</p>
+            <p>Vijayapura, Karnataka 586102 | 📞 094833 83030</p>
+            <p class="mt-2">
+                <a href="https://www.facebook.com/stjosephsbijapur" target="_blank"
+                    class="underline hover:text-white">Follow us on Facebook</a>
+            </p>
+        </div>
+    </footer>
+
+
+    <script>
+        AOS.init();
+    </script>
+    <!-- Zoom Modal -->
+<div id="principalModal" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center hidden z-50">
+    <div class="relative">
+      <button onclick="document.getElementById('principalModal').classList.add('hidden')" 
+              class="absolute top-2 right-2 text-white text-2xl font-bold hover:text-red-500">&times;</button>
+      <img src="https://i.ibb.co/RpfJDMt8/shajusir.jpg" 
+           alt="Principal Shaju Sir Zoomed"
+           class="max-w-full max-h-[90vh] border-4 border-white rounded-xl shadow-2xl" />
+    </div>
+  </div>
+  
+</body>
+
+</html>
