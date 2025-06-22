@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admissions | St. Joseph's PU College</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet" />
+</head>
+
+<body class="bg-white text-gray-800">
+  <!-- Navbar -->
+  <header class="bg-blue-900 text-white shadow sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="flex items-center gap-2 text-3xl md:text-4xl font-extrabold tracking-tight bg-gradient-to-r from-yellow-300 via-white to-yellow-300 text-transparent bg-clip-text drop-shadow-md">
+        <img src="https://img.icons8.com/ios-filled/30/school.png" alt="school" class="w-8 h-8" />
+        St. Joseph's PU College
+      </h1>     
+      <nav class="space-x-4 hidden md:block">
+        <a href="index.html" class="hover:text-yellow-300">Home</a>
+        <a href="about.html" class="hover:text-yellow-300">About</a>
+        <a href="courses.html" class="hover:text-yellow-300">Courses</a>
+        <a href="campus.html" class="hover:text-yellow-300">Campus Life</a>
+        <a href="admissions.html" class="hover:text-yellow-300">Admissions</a>
+        <a href="contact.html" class="hover:text-yellow-300">Contact</a>
+        <a href="founder.html" class="hover:text-yellow-300">Founder</a> <!-- 🔗 New link -->
+      </nav>
+    </div>
+  </header>
+
+  <!-- Admissions Section -->
+  <section class="py-16 px-6 max-w-5xl mx-auto" data-aos="fade-up">
+    <h2 class="text-4xl font-bold text-blue-900 mb-6">Admissions 2025 – Now Open!</h2>
+    <p class="text-lg leading-relaxed mb-6">
+      Join one of Vijayapura’s top PU colleges for a future built on strong academic and personal foundations. St. Joseph’s PU College welcomes aspiring students to enroll in Science and Commerce streams with integrated coaching for competitive exams.
+    </p>
+
+    <h3 class="text-2xl font-semibold text-blue-800 mt-10 mb-4">Admission Process</h3>
+    <ol class="list-decimal list-inside space-y-3 text-lg">
+      <li>Visit the college campus or contact us via phone/online form.</li>
+      <li>Submit your SSLC/10th Grade mark sheet.</li>
+      <li>Attend the orientation session (optional for parents/students).</li>
+      <li>Complete admission form & pay registration fee.</li>
+      <li>Confirm seat allocation and collect timetable/uniform info.</li>
+    </ol>
+
+    <p class="mt-6 text-lg">Limited seats. Early applications are encouraged!</p>
+  </section>
+
+  <!-- Enquiry Form -->
+  <section class="bg-gray-100 py-16 px-6" data-aos="fade-up">
+    <div class="max-w-2xl mx-auto">
+      <h3 class="text-3xl font-bold text-blue-900 mb-6 text-center">Enquire Now</h3>
+      <form action="https://formspree.io/f/your-form-id" method="POST" class="space-y-4">
+        <input type="text" name="name" placeholder="Your Full Name" required class="w-full p-3 border rounded" />
+        <input type="email" name="email" placeholder="Email Address" required class="w-full p-3 border rounded" />
+        <input type="tel" name="phone" placeholder="Phone Number" required class="w-full p-3 border rounded" />
+        <select name="course" required class="w-full p-3 border rounded">
+          <option value="">Select Course of Interest</option>
+          <option value="PCMB">PCMB</option>
+          <option value="PCMC">PCMC</option>
+          <option value="CEBA">CEBA</option>
+          <option value="SEBA">SEBA</option>
+        </select>
+        <textarea name="message" placeholder="Any Questions?" rows="4" class="w-full p-3 border rounded"></textarea>
+        <button type="submit" class="bg-blue-900 text-white px-6 py-3 rounded hover:bg-blue-800">Submit Enquiry</button>
+      </form>
+    </div>
+  </section>
+
+ <!-- Footer-->
+ <footer class="relative bg-gray-800 text-gray-200 py-6 text-center overflow-hidden">
+    <!-- Background radial glow -->
+    <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-purple-500/20 via-transparent to-transparent blur-2xl"></div>
+  
+    <!-- Glowing top border -->
+    <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 shadow-lg"></div>
+  
+    <!-- Content -->
+    <div class="relative z-10">
+      <p class="mb-2 font-semibold">St. Joseph’s PU College, Vijayapura</p>
+      <p>Behind Ashok Leyland Showroom, NH 13, Sholapur Bangalore Bypass Road, Near Rambhapur Village</p>
+      <p>Vijayapura, Karnataka 586102 | 📞 094833 83030</p>
+      <p class="mt-2">
+        <a href="https://www.facebook.com/stjosephsbijapur" target="_blank" class="underline hover:text-white">Follow us on Facebook</a>
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>

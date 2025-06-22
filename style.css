@@ -1,0 +1,77 @@
+/* Custom Styles for St. Joseph's PU College Website */
+
+/* Universal Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  
+/* Smooth fade-in animation */
+.fade-in {
+    animation: fadeIn 1s ease-in-out forwards;
+    opacity: 0;
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Neon text effect */
+  .neon-text {
+    color: #fff;
+    text-shadow:
+      0 0 5px #00f7ff,
+      0 0 10px #00f7ff,
+      0 0 20px #00f7ff,
+      0 0 40px #0ff;
+  }
+  
+  /* Button hover effect */
+  .btn-glow {
+    background-color: #1e40af;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-glow:hover {
+    background-color: #2563eb;
+    box-shadow: 0 0 20px rgba(37, 99, 235, 0.8);
+    transform: scale(1.05);
+  }
+  
+  /* Image pop on hover */
+  .gallery-img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .gallery-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Responsive text sizes */
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  
+  @media (min-width: 768px) {
+    .hero-title {
+      font-size: 4rem;
+    }
+  }
