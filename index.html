@@ -5,33 +5,67 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="St. Joseph’s PU College, Vijayapura - Offering integrated coaching for NEET, JEE, CET & CPT, with modern campus and experienced faculty.">
-
   <title>St. Joseph's PU College | Vijayapura</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet" />
+  <style>
+    @media (max-width: 768px) {
+      nav.space-x-4 {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: center;
+        margin-top: 1rem;
+      }
+    }
+  </style>
 </head>
 
 <body class="bg-white text-gray-800">
 
-  <!-- Navbar -->
-  <header class="bg-blue-900 text-white shadow sticky top-0 z-50">
-    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-      <h1 class="flex items-center gap-2 text-3xl md:text-4xl font-extrabold tracking-tight bg-gradient-to-r from-yellow-300 via-white to-yellow-300 text-transparent bg-clip-text drop-shadow-md">
-        <img src="https://img.icons8.com/ios-filled/30/school.png" alt="school" class="w-8 h-8" />
-        St. Joseph's PU College
-      </h1>      
-      <nav class="space-x-4"> 
-        <a href="index.html" class="hover:text-yellow-300">Home</a>
-        <a href="about.html" class="hover:text-yellow-300">About</a>
-        <a href="courses.html" class="hover:text-yellow-300">Courses</a>
-        <a href="campus.html" class="hover:text-yellow-300">Campus Life</a>
-        <a href="admissions.html" class="hover:text-yellow-300">Admissions</a>
-        <a href="contact.html" class="hover:text-yellow-300">Contact</a>
-        <a href="founder.html" class="hover:text-yellow-300">Founder</a> <!-- 🔗 New link -->
-      </nav>
-    </div>
-  </header>
+<!-- Responsive Navbar -->
+<header class="bg-blue-900 text-white shadow sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+    <!-- Logo -->
+    <h1 class="flex items-center gap-2 text-2xl font-extrabold tracking-tight bg-gradient-to-r from-yellow-300 via-white to-yellow-300 text-transparent bg-clip-text drop-shadow-md">
+      <img src="https://img.icons8.com/ios-filled/30/school.png" alt="school" class="w-8 h-8" />
+      St. Joseph's PU College
+    </h1>
+
+    <!-- Hamburger button -->
+    <button id="menu-toggle" class="md:hidden focus:outline-none">
+      <svg class="w-8 h-8 text-yellow-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
+    </button>
+
+    <!-- Desktop Nav -->
+    <nav class="hidden md:flex space-x-6 text-lg font-medium">
+      <a href="index.html" class="hover:text-yellow-300">Home</a>
+      <a href="about.html" class="hover:text-yellow-300">About</a>
+      <a href="courses.html" class="hover:text-yellow-300">Courses</a>
+      <a href="campus.html" class="hover:text-yellow-300">Campus Life</a>
+      <a href="admissions.html" class="hover:text-yellow-300">Admissions</a>
+      <a href="contact.html" class="hover:text-yellow-300">Contact</a>
+      <a href="founder.html" class="hover:text-yellow-300">Founder</a>
+    </nav>
+  </div>
+
+  <!-- Mobile Nav -->
+  <div id="mobile-menu" class="md:hidden hidden flex-col items-center space-y-4 bg-blue-800 py-4">
+    <a href="index.html" class="hover:text-yellow-300">Home</a>
+    <a href="about.html" class="hover:text-yellow-300">About</a>
+    <a href="courses.html" class="hover:text-yellow-300">Courses</a>
+    <a href="campus.html" class="hover:text-yellow-300">Campus Life</a>
+    <a href="admissions.html" class="hover:text-yellow-300">Admissions</a>
+    <a href="contact.html" class="hover:text-yellow-300">Contact</a>
+    <a href="founder.html" class="hover:text-yellow-300">Founder</a>
+  </div>
+</header>
+
 
   <!-- Hero Section -->
   <section class="relative text-white py-40 px-6 text-center bg-cover bg-center"
@@ -160,29 +194,24 @@
 
   <!-- Footer -->
   <footer class="relative bg-gray-800 text-gray-200 py-6 text-center overflow-hidden">
-    <div
-      class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-purple-500/20 via-transparent to-transparent blur-2xl">
-    </div>
-    <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 shadow-lg">
-    </div>
+    <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-purple-500/20 via-transparent to-transparent blur-2xl"></div>
+    <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 shadow-lg"></div>
     <div class="relative z-10">
       <img src="https://i.ibb.co/TBbt3jkq/badge.jpg" alt="College Badge" class="mx-auto mb-4 w-20 h-20 rounded-full" />
       <p class="mb-2 font-semibold">St. Joseph’s PU College, Vijayapura</p>
       <p>Behind Ashok Leyland Showroom, NH 13, Sholapur Bangalore Bypass Road, Near Rambhapur Village</p>
       <p>Vijayapura, Karnataka 586102 | 📞 094833 83030</p>
       <p class="mt-2">
-        <a href="https://www.facebook.com/stjosephsbijapur" target="_blank" class="underline hover:text-white">Follow us
-          on Facebook</a>
+        <a href="https://www.facebook.com/stjosephsbijapur" target="_blank" class="underline hover:text-white">Follow us on Facebook</a>
       </p>
-      <p>
-        &copy 2025 St. Joseph's PU College Vijayapura. All rights reserved.
-      </p>
+      <p class="mt-4 text-sm text-gray-400">© 2025 St. Joseph’s PU College. All rights reserved.</p>
     </div>
   </footer>
 
   <script>
     AOS.init();
-
+  
+    // Counters
     const counters = document.querySelectorAll('.counter');
     const speed = 200;
     counters.forEach(counter => {
@@ -200,12 +229,13 @@
       };
       update();
     });
-
+  
+    // Testimonial Slider
     let currentSlide = 0;
     const slider = document.querySelector('#slidesWrapper');
     const slides = slider.querySelectorAll('div');
     const dots = document.querySelectorAll('#testimonialCarousel + .flex button');
-
+  
     function slideTo(index) {
       currentSlide = index;
       const slideWidth = slides[0].offsetWidth;
@@ -215,18 +245,27 @@
         dot.classList.toggle('bg-gray-300', i !== index);
       });
     }
-
+  
     setInterval(() => {
       currentSlide = (currentSlide + 1) % slides.length;
       slideTo(currentSlide);
     }, 5000);
-
+  
     window.addEventListener('resize', () => {
       slideTo(currentSlide);
     });
-
+  
     slideTo(currentSlide);
+  
+    // 🟨 Hamburger Menu Toggle
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+  
+    menuToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
   </script>
+  
 </body>
 
 </html>
