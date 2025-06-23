@@ -34,24 +34,21 @@
     </h1>
 
     <!-- Hamburger button -->
-    <button id="menu-toggle" class="md:hidden focus:outline-none">
-      <svg class="w-8 h-8 text-yellow-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-          d="M4 6h16M4 12h16M4 18h16"></path>
-      </svg>
-    </button>
+<button id="menu-toggle" class="md:hidden text-white text-3xl focus:outline-none">
+  &#9776; <!-- ☰ -->
+</button>
 
-    <!-- Desktop Nav -->
-    <nav class="hidden md:flex space-x-6 text-lg font-medium">
-      <a href="index.html" class="hover:text-yellow-300">Home</a>
-      <a href="about.html" class="hover:text-yellow-300">About</a>
-      <a href="courses.html" class="hover:text-yellow-300">Courses</a>
-      <a href="campus.html" class="hover:text-yellow-300">Campus Life</a>
-      <a href="admissions.html" class="hover:text-yellow-300">Admissions</a>
-      <a href="contact.html" class="hover:text-yellow-300">Contact</a>
-      <a href="founder.html" class="hover:text-yellow-300">Founder</a>
-    </nav>
+<!-- Mobile Menu (initially hidden) -->
+<nav id="mobile-menu" class="md:hidden hidden flex flex-col items-center space-y-3 mt-4 text-white bg-blue-900 p-4 rounded shadow-lg z-50">
+  <a href="index.html" class="hover:text-yellow-300">Home</a>
+  <a href="about.html" class="hover:text-yellow-300">About</a>
+  <a href="courses.html" class="hover:text-yellow-300">Courses</a>
+  <a href="campus.html" class="hover:text-yellow-300">Campus Life</a>
+  <a href="admissions.html" class="hover:text-yellow-300">Admissions</a>
+  <a href="contact.html" class="hover:text-yellow-300">Contact</a>
+  <a href="founder.html" class="hover:text-yellow-300">Founder</a>
+</nav>
+
   </div>
 
   <!-- Mobile Nav -->
