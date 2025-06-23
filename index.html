@@ -260,13 +260,17 @@
   
     slideTo(currentSlide);
   
-    // 🟨 Hamburger Menu Toggle
-    const menuToggle = document.getElementById('menu-toggle');
-    const mobileMenu = document.getElementById('mobile-menu');
-  
-    menuToggle.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
-    });
+//Hamburger toggle
+menuToggle.addEventListener('click', () => {
+  if (mobileMenu.classList.contains('hidden')) {
+    mobileMenu.classList.remove('hidden');
+    mobileMenu.classList.add('flex');
+  } else {
+    mobileMenu.classList.add('hidden');
+    mobileMenu.classList.remove('flex');
+  }
+});
+
   </script>
   
 </body>
