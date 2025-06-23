@@ -9,35 +9,35 @@
   <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet" />
 </head>
 
-  <!-- Responsive Navbar -->
+<!-- Responsive Navbar -->
 <header class="bg-blue-900 text-white shadow sticky top-0 z-50">
   <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+    
     <!-- Logo -->
     <h1 class="flex items-center gap-2 text-2xl font-extrabold tracking-tight bg-gradient-to-r from-yellow-300 via-white to-yellow-300 text-transparent bg-clip-text drop-shadow-md">
       <img src="https://img.icons8.com/ios-filled/30/school.png" alt="school" class="w-8 h-8" />
       St. Joseph's PU College
     </h1>
 
-    <!-- Hamburger button -->
-<button id="menu-toggle" class="md:hidden text-white text-3xl focus:outline-none">
-  &#9776; <!-- ☰ -->
-</button>
+    <!-- Desktop Nav -->
+    <nav class="hidden md:flex space-x-4 text-white text-base font-medium">
+      <a href="index.html" class="hover:text-yellow-300">Home</a>
+      <a href="about.html" class="hover:text-yellow-300">About</a>
+      <a href="courses.html" class="hover:text-yellow-300">Courses</a>
+      <a href="campus.html" class="hover:text-yellow-300">Campus Life</a>
+      <a href="admissions.html" class="hover:text-yellow-300">Admissions</a>
+      <a href="contact.html" class="hover:text-yellow-300">Contact</a>
+      <a href="founder.html" class="hover:text-yellow-300">Founder</a>
+    </nav>
 
-<!-- Mobile Menu (initially hidden) -->
-<nav id="mobile-menu" class="md:hidden hidden flex flex-col items-center space-y-3 mt-4 text-white bg-blue-900 p-4 rounded shadow-lg z-50">
-  <a href="index.html" class="hover:text-yellow-300">Home</a>
-  <a href="about.html" class="hover:text-yellow-300">About</a>
-  <a href="courses.html" class="hover:text-yellow-300">Courses</a>
-  <a href="campus.html" class="hover:text-yellow-300">Campus Life</a>
-  <a href="admissions.html" class="hover:text-yellow-300">Admissions</a>
-  <a href="contact.html" class="hover:text-yellow-300">Contact</a>
-  <a href="founder.html" class="hover:text-yellow-300">Founder</a>
-</nav>
-
+    <!-- Hamburger Button -->
+    <button id="menu-toggle" class="md:hidden text-white text-3xl focus:outline-none">
+      &#9776;
+    </button>
   </div>
 
-  <!-- Mobile Nav -->
-  <div id="mobile-menu" class="md:hidden hidden flex-col items-center space-y-4 bg-blue-800 py-4">
+  <!-- Mobile Menu -->
+  <nav id="mobile-menu" class="md:hidden hidden flex-col items-center space-y-3 mt-4 text-white bg-blue-900 p-4 rounded shadow-lg z-50">
     <a href="index.html" class="hover:text-yellow-300">Home</a>
     <a href="about.html" class="hover:text-yellow-300">About</a>
     <a href="courses.html" class="hover:text-yellow-300">Courses</a>
@@ -45,9 +45,9 @@
     <a href="admissions.html" class="hover:text-yellow-300">Admissions</a>
     <a href="contact.html" class="hover:text-yellow-300">Contact</a>
     <a href="founder.html" class="hover:text-yellow-300">Founder</a>
-  </div>
+  </nav>
 </header>
-
+  
 <body class="bg-white text-gray-800">
   <!-- Hero Tribute -->
   <section class="relative text-center text-white py-24 bg-cover bg-center" 
@@ -103,5 +103,6 @@
   <script>
     AOS.init();
   </script>
+  <script src="script.js"></script>
 </body>
 </html>
