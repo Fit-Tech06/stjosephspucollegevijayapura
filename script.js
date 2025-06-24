@@ -44,41 +44,40 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
- // Counter logic (only run when visible)
-  const counters = document.querySelectorAll('.counter');
+// Counter logic (only run when visible)
+const counters = document.querySelectorAll('.counter');
 
-  const startCounting = (counter) => {
-    const span = counter.querySelector('.count');
-    const target = +counter.dataset.target;
-    let current = 0;
-    const speed = 100;
-    const increment = Math.ceil(target / speed);
+const startCounting = (counter) => {
+  const span = counter.querySelector('.count');
+  const target = +counter.getAttribute('data-target');
+  let current = 0;
+  const speed = 100;
+  const increment = Math.ceil(target / speed);
 
-    const update = () => {
-      if (current < target) {
-        current += increment;
-        span.innerText = current > target ? target : current;
-        requestAnimationFrame(update);
-      } else {
-        span.innerText = target;
-      }
-    };
-    update();
+  const update = () => {
+    if (current < target) {
+      current += increment;
+      span.innerText = current > target ? target : current;
+      requestAnimationFrame(update);
+    } else {
+      span.innerText = target;
+    }
   };
 
-  const observer = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const counter = entry.target;
-        startCounting(counter);
-        observer.unobserve(counter); // Run only once
-      }
-    });
-  }, {
-    threshold: 0.6 // Adjust if needed
-  });
+  update();
+};
 
-  counters.forEach(counter => {
-    observer.observe(counter);
+const observer = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      startCounting(entry.target);
+      observer.unobserve(entry.target);
+    }
   });
+}, {
+  threshold: 0.6
+});
+
+counters.forEach(counter => {
+  observer.observe(counter);
 });
