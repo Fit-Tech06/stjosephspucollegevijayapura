@@ -213,25 +213,6 @@
   <script>
     AOS.init();
   
-    // Counters
-    const counters = document.querySelectorAll('.counter');
-    const speed = 100;
-    counters.forEach(counter => {
-      const span = counter.querySelector('.count');
-      const target = +counter.dataset.target;
-      const update = () => {
-        const current = +span.innerText;
-        const inc = Math.ceil(target / speed);
-        if (current < target) {
-          span.innerText = current + inc;
-          setTimeout(update, 10);
-        } else {
-          span.innerText = target;
-        }
-      };
-      update();
-    });
-  
     // Testimonial Slider
     let currentSlide = 0;
     const slider = document.querySelector('#slidesWrapper');
