@@ -84,26 +84,36 @@
     <p class="mt-6 text-lg">Limited seats. Early applications are encouraged!</p>
   </section>
 
-  <!-- Enquiry Form -->
-  <section class="bg-gray-100 py-16 px-6" data-aos="fade-up">
-    <div class="max-w-2xl mx-auto">
-      <h3 class="text-3xl font-bold text-blue-900 mb-6 text-center">Enquire Now</h3>
-      <form action="https://formspree.io/f/your-form-id" method="POST" class="space-y-4">
-        <input type="text" name="name" placeholder="Your Full Name" required class="w-full p-3 border rounded" />
-        <input type="email" name="email" placeholder="Email Address" required class="w-full p-3 border rounded" />
-        <input type="tel" name="phone" placeholder="Phone Number" required class="w-full p-3 border rounded" />
-        <select name="course" required class="w-full p-3 border rounded">
-          <option value="">Select Course of Interest</option>
-          <option value="PCMB">PCMB</option>
-          <option value="PCMC">PCMC</option>
-          <option value="CEBA">CEBA</option>
-          <option value="SEBA">SEBA</option>
-        </select>
-        <textarea name="message" placeholder="Any Questions?" rows="4" class="w-full p-3 border rounded"></textarea>
-        <button type="submit" class="bg-blue-900 text-white px-6 py-3 rounded hover:bg-blue-800">Submit Enquiry</button>
-      </form>
-    </div>
-  </section>
+ <!-- Enquiry Form -->
+<section class="bg-gray-100 py-16 px-6" data-aos="fade-up">
+  <div class="max-w-2xl mx-auto">
+    <h3 class="text-3xl font-bold text-blue-900 mb-6 text-center">Enquire Now</h3>
+
+    <form action="https://formspree.io/f/xpwrynyv" method="POST" class="space-y-4">
+      <input type="text" name="name" placeholder="Your Full Name" required class="w-full p-3 border rounded" />
+      <input type="email" name="email" placeholder="Email Address" required class="w-full p-3 border rounded" />
+      <input type="tel" name="phone" placeholder="Phone Number" required class="w-full p-3 border rounded" />
+
+      <select name="course" required class="w-full p-3 border rounded">
+        <option value="">Select Course of Interest</option>
+        <option value="PCMB">PCMB</option>
+        <option value="PCMC">PCMC</option>
+        <option value="CEBA">CEBA</option>
+        <option value="SEBA">SEBA</option>
+      </select>
+
+      <textarea name="message" placeholder="Any Questions?" rows="4" class="w-full p-3 border rounded"></textarea>
+
+      <!-- Hidden field to know the source page -->
+      <input type="hidden" name="source" value="Admissions Page">
+
+      <button type="submit" class="bg-blue-900 text-white px-6 py-3 rounded hover:bg-blue-800 transition">
+        Submit Enquiry
+      </button>
+    </form>
+  </div>
+</section>
+
 
   <!-- Footer -->
 <footer class="site-footer relative bg-gray-800 text-gray-200 py-6 text-center overflow-hidden">
