@@ -75,3 +75,16 @@
       font-size: 4rem;
     }
   }
+
+/* footer visibility */
+.site-footer {
+  padding-left: 1rem;  /* px-4 */
+  padding-right: 1rem;
+}
+
+@media (min-width: 640px) {
+  .site-footer {
+    padding-left: 2rem;  /* sm:px-8 */
+    padding-right: 2rem;
+  }
+}
