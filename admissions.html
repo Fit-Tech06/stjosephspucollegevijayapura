@@ -137,6 +137,7 @@
 
 <script>
   const form = document.getElementById("enquiryForm");
+
   form.addEventListener("submit", function (e) {
     e.preventDefault();
 
@@ -148,15 +149,15 @@
       message: form.message.value
     };
 
-    fetch("YOUR_GOOGLE_SCRIPT_URL", {
+    fetch("https://script.google.com/macros/s/AKfycbzr-nLdC86PWofCC_bh8HkMJRZYEV5jDl8BtZksKJN_2qQLjE4S9-HlABa035xu0_G2Mg/exec", {
       method: "POST",
       body: JSON.stringify(formData),
       headers: {
         "Content-Type": "application/json"
-      }
+      },
+      mode: "no-cors"
     })
-    .then(res => res.text())
-    .then(data => {
+    .then(() => {
       alert("Submitted successfully!");
       form.reset();
     })
@@ -166,6 +167,7 @@
     });
   });
 </script>
+
   
   <script src="script.js"></script>
 </body>
